@@ -1,0 +1,83 @@
+{
+  "version": "2025-10-30-v2",
+  "domains": [
+    "PF",
+    "PI",
+    "F",
+    "SR",
+    "A",
+    "D"
+  ],
+  "mcid": {
+    "PF": 5,
+    "PI": 5,
+    "F": 3,
+    "SR": 4,
+    "A": 3,
+    "D": 3
+  },
+  "routing": {
+    "gate_items_per_domain": 2,
+    "min_items": {
+      "PF": 3,
+      "PI": 3,
+      "F": 2,
+      "SR": 2,
+      "A": 3,
+      "D": 3
+    },
+    "max_items": {
+      "PF": 6,
+      "PI": 6,
+      "F": 5,
+      "SR": 5,
+      "A": 6,
+      "D": 6
+    },
+    "stop_se_t": {
+      "PF": 3.0,
+      "PI": 3.0,
+      "F": 3.0,
+      "SR": 3.0,
+      "A": 3.5,
+      "D": 3.5
+    },
+    "a_d_second_pass": {
+      "enabled": true,
+      "se_threshold": 3.5,
+      "theta_hi_t": 60.0,
+      "discordance_trigger": true,
+      "extra_items": 1
+    }
+  },
+  "calibration": {
+    "PF": {
+      "method": "linear",
+      "file": "crosswalks/PF.json"
+    },
+    "PI": {
+      "method": "linear",
+      "file": "crosswalks/PI.json"
+    },
+    "F": {
+      "method": "linear",
+      "file": "crosswalks/F.json"
+    },
+    "SR": {
+      "method": "linear",
+      "file": "crosswalks/SR.json"
+    },
+    "A": {
+      "method": "piecewise",
+      "file": "crosswalks/A_piecewise.json"
+    },
+    "D": {
+      "method": "piecewise",
+      "file": "crosswalks/D_piecewise.json"
+    }
+  },
+  "clip": [
+    20,
+    80
+  ]
+}
