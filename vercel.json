@@ -1,8 +1,1 @@
-﻿{
-  "functions": {
-    "api/*.ts": {
-      "runtime": "nodejs20.x",
-      "includeFiles": "model/**"
-    }
-  }
-}
+{ "functions": { "api/*.ts": { "runtime": "nodejs20.x", "includeFiles": "model/**" } } }
